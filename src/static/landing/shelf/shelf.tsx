@@ -11,14 +11,14 @@ type WorkType = {
 
 const work: WorkType[] = [
 	{
-		time: '2024 - 2025',
+		time: 'Aug 2024 - Dec 2024',
 		title: 'Web-based Inventory Application',
 		link: 'https://nusantara-inventory-swart.vercel.app/',
 		desc: "A web-based inventory application that i've built for my thesis.",
 		builtWith: ['Next.js', 'Next UI', 'Tailwind CSS', 'Postman', 'Mongo DB']
 	},
 	{
-		time: 'Feb 2024 - Dec 2025',
+		time: 'Feb 2024 - Dec 2024',
 		title: 'REGLA 2.0',
 		link: 'https://www.youtube.com/watch?v=dcL2noV-dQ0',
 		desc: "A web-based Automation Regulatory Compliance application developed by NTT Data where i've been intern with.",
