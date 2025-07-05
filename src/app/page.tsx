@@ -7,7 +7,7 @@ import Shelf from '@/static/landing/shelf/shelf'
 
 export default function Home() {
 	return (
-		<div className="mx-2 w-full h-full ">
+		<div className="w-screen h-full px-5">
 			<CircleIndicator place="bottom-right" />
 			<Landing />
 			<Shelf />

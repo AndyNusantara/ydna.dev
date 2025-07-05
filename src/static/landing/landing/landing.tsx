@@ -1,21 +1,20 @@
-'use client'
-
 import { Icon } from '@iconify-icon/react/dist/iconify.mjs'
-import Image from 'next/image'
-import Link from 'next/link'
 import { motion } from 'motion/react'
 import { Typewriter } from 'react-simple-typewriter'
+import Button from '@/components/button/button.components'
+import { useRouter } from 'next/navigation'
+import HeroImage from './heroImages.component'
 
-export default function Landing() {
+const Landing = () => {
+	const router = useRouter()
+
 	return (
 		<div className="w-full h-screen">
-			<div className="flex flex-col items-center justify-center lg:flex-row gap-10 h-full">
-				<div className="rounded-full overflow-hidden size-[200px] lg:size-[300px] relative">
-					<Image src="/me-self.jpeg" alt="" fill className="object-cover" />
-				</div>
+			<div className="h-full flex flex-col items-center justify-center gap-10 lg:flex-row">
+				<HeroImage image="/me-self.jpeg" />
 				<div className="flex flex-col items-center justify-center gap-10 lg:justify-start lg:items-start">
-					<span className="text-4xl lg:text-7xl items-center flex flex-col">
-						<span className="px-5 max-w-xl">
+					<span className="max-w-60 flex flex-wrap items-center justify-center text-4xl lg:max-w-xl lg:text-7xl">
+						<span>
 							<Typewriter cursor loop={1} words={['ANDY WIJAYA NUSANTARA.']} />
 						</span>
 					</span>
@@ -25,13 +24,10 @@ export default function Landing() {
 							with modern tools.
 						</p>
 						<motion.div whileHover={{ scale: 1.1 }}>
-							<Link
-								href="#shelf"
-								className="h-10 border-2 w-fit gap-2 flex justify-center items-center rounded-sm p-2 text-cyan-400"
-							>
+							<Button title="button" onClick={() => router.push('/#shelf')}>
 								<p>See what i&apos;ve done</p>
 								<Icon icon="hugeicons:link-backward" />
-							</Link>
+							</Button>
 						</motion.div>
 					</span>
 				</div>
@@ -39,3 +35,5 @@ export default function Landing() {
 		</div>
 	)
 }
+
+export default Landing
