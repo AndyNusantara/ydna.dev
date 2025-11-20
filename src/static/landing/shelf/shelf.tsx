@@ -38,14 +38,14 @@ const projects: ShelfComponentType[] = [
 		time: 'May 2025 - June 2025',
 		title: 'Typing!',
 		link: 'https://typing-gameee.vercel.app/',
-		desc: 'Typing! is a typing test application to measure and improve your keyboard skills',
+		desc: 'Typing! is a typing test application to measure and improve your keyboard skills.',
 		builtWith: ['React.js', 'TypeScript', 'Tailwind CSS', 'Redux']
 	},
 	{
 		time: 'October 2025 - November 2025',
 		title: 'Code Vault',
 		link: 'https://code-vault.vercel.app/',
-		desc: 'A code snippet manager for developers. Features real-time syntax highlighting, smart search, favorites system, and responsive design. Built with Vue 3, Vuetify, and Pinia.',
+		desc: 'A code snippet manager for developers. Features real-time syntax highlighting, smart search, favorites system, and responsive design.',
 		builtWith: ['Vue 3', 'Vuetify', 'Pinia']
 	}
 ]
