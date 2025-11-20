@@ -44,7 +44,7 @@ const projects: ShelfComponentType[] = [
 	{
 		time: 'October 2025 - November 2025',
 		title: 'Code Vault',
-		link: 'https://code-vault.vercel.app/',
+		link: 'https://codevault-awn.vercel.app/',
 		desc: 'A code snippet manager for developers. Features real-time syntax highlighting, smart search, favorites system, and responsive design.',
 		builtWith: ['Vue 3', 'Vuetify', 'Pinia']
 	}
